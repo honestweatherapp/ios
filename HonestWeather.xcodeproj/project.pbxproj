@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22E8510884BF4D6B2143559B /* Pods_HonestWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D80037E8286FF43610D2552 /* Pods_HonestWeather.framework */; };
 		6641234423F0104700E149EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641234323F0104700E149EC /* AppDelegate.swift */; };
 		6641234623F0104700E149EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641234523F0104700E149EC /* SceneDelegate.swift */; };
 		6641234823F0104700E149EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641234723F0104700E149EC /* ViewController.swift */; };
 		6641234B23F0104700E149EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6641234923F0104700E149EC /* Main.storyboard */; };
 		6641234D23F0104800E149EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6641234C23F0104800E149EC /* Assets.xcassets */; };
 		6641235023F0104800E149EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6641234E23F0104800E149EC /* LaunchScreen.storyboard */; };
+		667CFD0723F893A600EAE1BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CFD0623F893A600EAE1BB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B30B36100549E735452B5FE /* Pods-HonestWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HonestWeather.debug.xcconfig"; path = "Target Support Files/Pods-HonestWeather/Pods-HonestWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		3D80037E8286FF43610D2552 /* Pods_HonestWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HonestWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBB0164088A3077F0C7DA1F /* Pods-HonestWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HonestWeather.release.xcconfig"; path = "Target Support Files/Pods-HonestWeather/Pods-HonestWeather.release.xcconfig"; sourceTree = "<group>"; };
 		6641234023F0104700E149EC /* HonestWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HonestWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6641234323F0104700E149EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6641234523F0104700E149EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		6641234C23F0104800E149EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6641234F23F0104800E149EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6641235123F0104800E149EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667CFD0623F893A600EAE1BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E8510884BF4D6B2143559B /* Pods_HonestWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20468BC865878BDDFC65093E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D80037E8286FF43610D2552 /* Pods_HonestWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6641233723F0104700E149EC = {
 			isa = PBXGroup;
 			children = (
 				6641234223F0104700E149EC /* HonestWeather */,
 				6641234123F0104700E149EC /* Products */,
+				666DB27D86F27BE30B6BECFB /* Pods */,
+				20468BC865878BDDFC65093E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,33 @@
 		6641234223F0104700E149EC /* HonestWeather */ = {
 			isa = PBXGroup;
 			children = (
+				667CFD0523F8938C00EAE1BB /* Controllers */,
 				6641234323F0104700E149EC /* AppDelegate.swift */,
 				6641234523F0104700E149EC /* SceneDelegate.swift */,
-				6641234723F0104700E149EC /* ViewController.swift */,
 				6641234923F0104700E149EC /* Main.storyboard */,
 				6641234C23F0104800E149EC /* Assets.xcassets */,
 				6641234E23F0104800E149EC /* LaunchScreen.storyboard */,
 				6641235123F0104800E149EC /* Info.plist */,
+				667CFD0623F893A600EAE1BB /* Constants.swift */,
 			);
 			path = HonestWeather;
+			sourceTree = "<group>";
+		};
+		666DB27D86F27BE30B6BECFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B30B36100549E735452B5FE /* Pods-HonestWeather.debug.xcconfig */,
+				4FBB0164088A3077F0C7DA1F /* Pods-HonestWeather.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		667CFD0523F8938C00EAE1BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6641234723F0104700E149EC /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6641235423F0104800E149EC /* Build configuration list for PBXNativeTarget "HonestWeather" */;
 			buildPhases = (
+				125090F07B4F9197B8AE438F /* [CP] Check Pods Manifest.lock */,
 				6641233C23F0104700E149EC /* Sources */,
 				6641233D23F0104700E149EC /* Frameworks */,
 				6641233E23F0104700E149EC /* Resources */,
+				BBC971E8B7FECEA33E0CD145 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		125090F07B4F9197B8AE438F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HonestWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC971E8B7FECEA33E0CD145 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HonestWeather/Pods-HonestWeather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HonestWeather/Pods-HonestWeather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HonestWeather/Pods-HonestWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6641233C23F0104700E149EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +220,7 @@
 				6641234823F0104700E149EC /* ViewController.swift in Sources */,
 				6641234423F0104700E149EC /* AppDelegate.swift in Sources */,
 				6641234623F0104700E149EC /* SceneDelegate.swift in Sources */,
+				667CFD0723F893A600EAE1BB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +362,7 @@
 		};
 		6641235523F0104800E149EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B30B36100549E735452B5FE /* Pods-HonestWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +381,7 @@
 		};
 		6641235623F0104800E149EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FBB0164088A3077F0C7DA1F /* Pods-HonestWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

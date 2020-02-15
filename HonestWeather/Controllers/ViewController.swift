@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
+    @IBOutlet weak var WeatherLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    func getWeather() -> Void {
+        AF.request("api.openweathermap.org/data/2.5/weather?q=Poznan&appid=")
+    }
 }
-

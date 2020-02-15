@@ -1,0 +1,6 @@
+framework module Pods_HonestWeather {
+  umbrella header "Pods-HonestWeather-umbrella.h"
+
+  export *
+  module * { export * }
+}
