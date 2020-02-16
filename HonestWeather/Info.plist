@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>HonestWeather wants to know your location</string>
+	<string>Aplikacja HonestWeather do poprawnego działania potrzebuje informacji o twojej lokalizacji</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>HonestWeather wants to know your location</string>
+	<string>Aplikacja HonestWeather do poprawnego działania potrzebuje informacji o twojej lokalizacji</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
