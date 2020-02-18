@@ -11,12 +11,14 @@ import Alamofire
 import SwiftyJSON
 import CoreLocation
 
+let API = "https://honestweather-api.herokuapp.com/api/v1"
+
 class ViewController: UIViewController {
   @IBOutlet weak var ShortDescription: UILabel!
   let locationManager = CLLocationManager()
 
-  var longitude:Double = 0
-  var latitude:Double = 0
+  var longitude:Double? = nil
+  var latitude:Double? = nil
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,10 +29,10 @@ class ViewController: UIViewController {
 
   func getWeather() -> Void {
     if (longitude != 0 && latitude != 0) {
-      AF.request("https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(API_KEY)&units=metric").responseJSON { response in
+      AF.request("\(API)/weather?lat=\(latitude!)&long=\(longitude!)&units=metric&lang=pl").responseJSON { response in
         let json = JSON(response.data!)
 
-        self.ShortDescription.text = WeatherDescriptions.shortDescription(weather: json)
+        self.ShortDescription.text = json["message"].string
         UIView.animate(withDuration: 1, animations: {
           self.ShortDescription.alpha = 1
         })

@@ -15,7 +15,6 @@
 		6641234D23F0104800E149EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6641234C23F0104800E149EC /* Assets.xcassets */; };
 		6641235023F0104800E149EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6641234E23F0104800E149EC /* LaunchScreen.storyboard */; };
 		667CAFC223F96D2D0045A1FE /* WeatherDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CAFC123F96D2D0045A1FE /* WeatherDescriptions.swift */; };
-		667CFD0723F893A600EAE1BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CFD0623F893A600EAE1BB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		6641234F23F0104800E149EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6641235123F0104800E149EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		667CAFC123F96D2D0045A1FE /* WeatherDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDescriptions.swift; sourceTree = "<group>"; };
-		667CFD0623F893A600EAE1BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 				6641234C23F0104800E149EC /* Assets.xcassets */,
 				6641234E23F0104800E149EC /* LaunchScreen.storyboard */,
 				6641235123F0104800E149EC /* Info.plist */,
-				667CFD0623F893A600EAE1BB /* Constants.swift */,
 				667CAFC123F96D2D0045A1FE /* WeatherDescriptions.swift */,
 			);
 			path = HonestWeather;
@@ -224,7 +221,6 @@
 				667CAFC223F96D2D0045A1FE /* WeatherDescriptions.swift in Sources */,
 				6641234423F0104700E149EC /* AppDelegate.swift in Sources */,
 				6641234623F0104700E149EC /* SceneDelegate.swift in Sources */,
-				667CFD0723F893A600EAE1BB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
